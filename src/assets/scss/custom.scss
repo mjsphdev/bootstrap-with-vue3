@@ -1,3 +1,5 @@
+@import 'node_modules/bootstrap/scss/functions';
+
 $primary: #2980b9;
 $secondary: green;
 
@@ -21,7 +23,16 @@ $input-focus-bg: $secondary-color;
 $input-focus-border-color: $base-color;
 $input-font-size: 20px;
 
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/maps";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/forms";
 
 
 body {
