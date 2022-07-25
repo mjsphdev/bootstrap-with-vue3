@@ -1,0 +1,112 @@
+$primary: #2980b9;
+$secondary: green;
+
+$base-color: #130f40;
+$secondary-color: #30336b;
+
+$bodyBackground: $base-color;
+$cardBackground: $secondary-color;
+
+$card-border-color: $secondary-color;
+
+$scrollbarBackground: #686de0;
+$scrollbarBackgroundHover: #4834d4;
+
+$btn-border-radius: none;
+$btn-border-radius-lg: none;
+
+$input-bg: $secondary-color;
+$input-border-radius: 0;
+$input-focus-bg: $secondary-color;
+$input-focus-border-color: $base-color;
+$input-font-size: 20px;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+
+body {
+    background: $bodyBackground;
+}
+
+#home, #featured-works, #githubrepo, #blog, #about, #contact{
+    height: 100vh;
+}
+
+.form-control {
+    border: $secondary-color;
+}
+
+.card {
+    background-color: $cardBackground;
+}
+
+.gitBackground {
+    background-color: $bodyBackground;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+.gitBackground:hover {
+    transform: scale(1.1);
+}
+
+.navbar-color{
+    background: $bodyBackground;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $scrollbarBackground; 
+  border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $scrollbarBackgroundHover; 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #home, #featured-works, #githubrepo, #blog, #about, #contact{
+        height: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #home, #featured-works, #githubrepo, #blog, #about, #contact{
+        height: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #home, #featured-works, #githubrepo, #blog, #about, #contact{
+        height: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #home, #featured-works, #githubrepo, #blog, #about, #contact{
+        height: 100vh;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #home, #featured-works, #githubrepo, #blog, #about, #contact{
+        height: 100vh;
+    }
+}
