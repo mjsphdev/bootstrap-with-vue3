@@ -1,22 +1,25 @@
 <script lang="ts">
 import { ref, defineComponent } from "vue";
-import CardGrid from '@/components/organisms/CardGrid.vue'
+
+import CardWork from '@/components/card-work/card-work.vue'
+import CardGithub from '@/components/card-github/card-github.vue'
 import type { FeaturedWork } from "@/types";
 import { featuredWork, githubRepo } from "@/data";
 
 export default defineComponent({
     setup(){
-        const listOfCards = ref<FeaturedWork[]>(featuredWork)
+        const listOfWorks = ref<FeaturedWork[]>(featuredWork)
         const githubRepoCards = ref<FeaturedWork[]>(githubRepo)
 
         return {
-            listOfCards,
+            listOfWorks,
             githubRepoCards
         }
     },
 
     components: {
-        CardGrid
+        CardWork,
+        CardGithub
     }
 })
 </script>
@@ -24,13 +27,13 @@ export default defineComponent({
     <section id="featured-works">
         <div class="container">
             <h1 class="display-5 text-light fw-bold">Featured Work</h1>
-            <CardGrid :cards="listOfCards" :grid="6"/>
+            <CardWork :cards="listOfWorks" />
         </div>
     </section>
     <section id="githubrepo">
         <div class="container">
             <h1 class="display-5 text-light fw-bold">Github Repositories</h1>
-            <CardGrid :cards="githubRepoCards" :grid="4" />
+            <CardGithub :cards="githubRepoCards" />
         </div>
     </section>
 </template>
