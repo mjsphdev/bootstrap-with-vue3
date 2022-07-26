@@ -1,6 +1,5 @@
 <script lang="ts">
 import { ref, defineComponent } from "vue";
-
 import CardWork from '@/components/card-work/card-work.vue'
 import CardGithub from '@/components/card-github/card-github.vue'
 import type { FeaturedWork } from "@/types";
