@@ -10,22 +10,22 @@ export default defineComponent({
 </script>
 
 <template>
-        <!-- TITLE  -->
-        <BaseCardTitle>
-            <template #cardTitle>
-                <slot name="baseCardTitle"></slot>
-            </template>
-        </BaseCardTitle>
-        <!-- BODY  -->
-        <BaseCardBody>
-            <template #cardBody>
-                <slot name="baseCardBody"></slot>
-            </template>
-        </BaseCardBody>
-        <!-- FOOTER  -->
-        <BaseCardFooter>
-            <template #cardFooter>
-                <slot name="baseCardFooter"></slot>
-            </template>
-        </BaseCardFooter>   
+    <!-- TITLE  -->
+    <BaseCardTitle>
+        <template #cardTitle>
+            <slot name="baseCardTitle"></slot>
+        </template>
+    </BaseCardTitle>
+    <!-- BODY  -->
+    <BaseCardBody>
+        <template #cardBody>
+            <slot name="baseCardBody"></slot>
+        </template>
+    </BaseCardBody>
+    <!-- FOOTER  -->
+    <BaseCardFooter>
+        <template #cardFooter>
+            <slot name="baseCardFooter"></slot>
+        </template>
+    </BaseCardFooter>   
 </template>
